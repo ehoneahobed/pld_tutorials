@@ -31,7 +31,7 @@ int main(void){
     /* create a head */
     head = nodeA;
 
-    /* create a temporal pointer */
+    /* create a temporary pointer */
     struct node *temp;
 
     temp = head;
