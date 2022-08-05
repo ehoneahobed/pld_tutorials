@@ -22,7 +22,7 @@ int main()
         /* check if read_line failed to read or reached EOF */
         if (num_read == -1){
             write(2, "Exiting shell....\n", 18);
-            return (-1);
+            exit(1);
         }
 
         /* parse the line read into individual tokens */
