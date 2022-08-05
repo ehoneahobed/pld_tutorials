@@ -7,6 +7,9 @@ int execute_command(char **tokens)
     
     envp = environ;
 
+    /* check if command is one of the built in commands */
+    check_builtin_cmd(tokens);
+
     /* check if command exist and generate the path for the command */
     command = _which(tokens[0]);
     if (command == NULL)
